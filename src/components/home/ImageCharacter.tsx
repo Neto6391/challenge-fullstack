@@ -10,7 +10,6 @@ function ImageCharacterCard({...props}: ImageCharacter) {
     
     characterWithImage.filter((character: any) => character.name === props.name );
 
-    console.log(Object.prototype.isPrototypeOf.call(getCharacterImageURL(), "image"));
     const characterImage: Record<string, unknown> = Object.assign({}, getCharacterImageURL());
     return (
         characterImage && characterImage.image ? (

@@ -20,9 +20,6 @@ function HomePage() {
         .then(response => response.json())
         .then((data: any) => {
             const peoples: any = [];
-            console.log("data", data);
-
-                
 
                 if (data.results.length > 0) {
 
